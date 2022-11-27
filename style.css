@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+}
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Light-Grayish-Magenta);
+  background: url(./images/bg-pattern-bottom-desktop.svg) bottom right no-repeat,
+    url(./images/bg-pattern-top-desktop.svg) no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+/* .main_container {
+  width: 90rem;
+} */
+.top_container {
+  width: 90rem;
+  height: 26rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: blue; */
+}
+.main_text {
+  width: 30rem;
+  text-align: left;
+}
+.top_heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--Very-Dark-Magenta);
+}
+.top_description {
+  color: var(--Dark-Grayish-Magenta);
+  line-height: 1.5rem;
+  width: 25rem;
+}
+ul {
+  list-style-type: none;
+}
+
+span {
+  color: var(--Very-Dark-Magenta);
+}
+.ratings {
+  width: 33rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.rating_star {
+  background-color: var(--Light-Grayish-Magenta);
+  width: 25rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 7px 2px rgba(122, 122, 122, 0.97);
+}
+
+.ratings .rating_star:first-of-type {
+  align-self: flex-start;
+}
+
+.ratings .rating_star:nth-of-type(2) {
+  align-self: center;
+}
+
+.ratings .rating_star:last-of-type {
+  align-self: flex-end;
+}
+
+.rating_star h2 {
+  color: var(--Very-Dark-Magenta);
+}
+
+.bottom_container {
+  height: 16rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bottom_container .card:first-of-type {
+  align-self: flex-start;
+}
+.bottom_container .card:nth-of-type(2) {
+  align-self: center;
+}
+.bottom_container .card:last-of-type {
+  align-self: flex-end;
+}
+.card {
+  background-color: var(--Very-Dark-Magenta);
+  width: 20rem;
+  height: 13rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 7px 2px rgba(122, 122, 122, 0.97);
+}
+.card img {
+  border-radius: 50%;
+  width: 2.5rem;
+  border: 0.07rem solid #fff;
+}
+
+.card_header {
+  display: flex;
+  justify-content: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 1rem;
+}
+
+.card_text {
+  color: var(--Light-Grayish-Magenta);
+  margin: 0 1rem 0 1rem;
+  line-height: 1.3rem;
+  text-align: left;
+}
+
+.card h3 {
+  color: var(--Light-Grayish-Magenta);
+  margin-bottom: 0.3rem;
+}
+
+.card_info p {
+  color: var(--Dark-Grayish-Magenta);
+}
+
+.attribution {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .main_container {
+    width: 25rem;
+    height: 82rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: blue; */
+  }
+  .top_container {
+    width: 25rem;
+    height: 10rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  .main_text {
+    width: 20rem;
+  }
+
+  .ratings {
+    width: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellowgreen; */
+  }
+
+  .rating_star {
+    width: 20rem;
+    flex-direction: column;
+  }
+  .bottom_container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    gap: 1.5rem;
+    margin: 2rem 2rem;
+  }
+
+  .top_heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+  }
+  .top_description {
+    width: 20rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .card_text {
+    margin-bottom: 1rem;
+  }
+}
